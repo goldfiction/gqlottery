@@ -13,6 +13,6 @@
     "needle": "1.4.5"
   },
   "scripts":{
-      "start":"'node app.js'"
+      "start":"node app.js"
   }
 }

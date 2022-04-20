@@ -19,7 +19,9 @@ function manypush(many,max,avoid){
 }
 
 function runMain(){
-    console.log("Welcome to use gqlottery.")
+    console.log("Welcome to GqLottery")
+    console.log("--------------------");
+    console.log("");
     
     var seven={},six={};
     
@@ -37,5 +39,5 @@ function runMain(){
     console.log("");
 }
 
-module.exports=runMain;
+//module.exports.runMain=runMain;
 runMain();
