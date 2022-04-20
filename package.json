@@ -1,0 +1,18 @@
+{
+  "name": "gqlottery",
+  "version": "1.0.0",
+  "main":"app.js",
+  "repository":"",
+  "license":"MIT",
+  "private":"false",
+  "dependencies": {
+    "lodash": "1.0.0",
+    "assert": "1.4.1",
+    "async": "2.1.5",
+    "mocha": "2.4.5",
+    "needle": "1.4.5"
+  },
+  "scripts":{
+      "start":"'node app.js'"
+  }
+}
