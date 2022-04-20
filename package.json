@@ -2,7 +2,7 @@
   "name": "gqlottery",
   "version": "1.0.0",
   "main":"app.js",
-  "repository":"",
+  "repository":"git@github.com:goldfiction/gqlottery.git",
   "license":"MIT",
   "private":"false",
   "dependencies": {

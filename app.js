@@ -1,20 +1,12 @@
 function randval(max,avoid){
     var val=Math.floor(Math.random() * max)+1
-    if(avoid){
-        avoid.forEach(function(avoidVal){
-            if (val==avoidVal){
-                return randval(max,avoid);
-            }
-        })
-    }
+    if(avoid){avoid.forEach((avoidVal) => { if(val==avoidVal){ return randval(max,avoid); } })}
     return val;
 }
 
 function manypush(many,max,avoid){
-    var value=[],i;
-    for(i=0;i<many;i++){
-        value.push(randval(max,avoid?value:false));
-    }
+    var value=[],i=0;
+    for(;i++<many;) value.push(randval(max,avoid?value:false));
     return value;
 }
 
@@ -39,5 +31,5 @@ function runMain(){
     console.log("");
 }
 
-//module.exports.runMain=runMain;
+module.exports.runMain=runMain;
 runMain();
