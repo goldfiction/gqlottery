@@ -1,15 +1,18 @@
+// return a random value from 0-max, avoid is an array of integers to not repeat with. avoid=false to skip this check
 function randval(max,avoid){
     var val=Math.floor(Math.random() * max)+1
     if(avoid){avoid.forEach((avoidVal) => { if(val==avoidVal){ return randval(max,avoid); } })}
     return val;
 }
 
+// return an array of values from 0-max. number of values is many. avoid is a boolean to allow or disallow repeated values
 function manypush(many,max,avoid){
     var value=[],i=0;
     for(;i++<many;) value.push(randval(max,avoid?value:false));
     return value;
 }
 
+// print the results of the 777 and 649 lottery. Use this value to have fun with guessing.
 function runMain(){
     console.log("Welcome to GqLottery")
     console.log("--------------------");
