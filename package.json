@@ -1,13 +1,11 @@
 {
   "name": "gqlottery",
   "version": "1.0.0",
-  "main":"app.js",
-  "repository":"git@github.com:goldfiction/gqlottery.git",
-  "license":"MIT",
-  "private":"false",
-  "dependencies": {
-  },
-  "scripts":{
-      "start":"node app.js"
+  "main": "app.js",
+  "repository": "git@github.com:goldfiction/gqlottery.git",
+  "license": "MIT",
+  "private": "false",
+  "scripts": {
+    "start": "node app.js"
   }
 }
